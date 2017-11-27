@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jlyon87/rethinkdb-exp#readme",
   "dependencies": {
-    "rethinkdb": "^2.3.3"
+    "rethinkdb": "^2.3.3",
+    "rethinkdbdash": "^2.3.31"
   }
 }
