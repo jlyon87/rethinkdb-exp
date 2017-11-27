@@ -49,7 +49,12 @@ connectRethinkDB()
 
 	queryAuthorsByName(["William Adama"], conn)
 		.then(cursor => cursor.toArray())
-		.then(data => logData(data, "authors by name"))
+		.then(data => logData(data, "authors by name - William Adama"))
+		.catch(console.error);
+
+	queryAuthorsByName(["William Adama", "Jean-Luc Picard"], conn)
+		.then(cursor => cursor.toArray())
+		.then(data => logData(data, "authors by name - William Adama, Jean-Luc Picard"))
 		.catch(console.error);
 
 	return conn;
